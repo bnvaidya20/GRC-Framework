@@ -46,42 +46,42 @@ Tracks organizational assets and their associated critical details  such as owne
 
 - **Attributes**: Asset_ID, Asset_Type_ID, Owner_ID, Department, Criticality, Business_Impact, Violation_Details
 
-    ![Asset Table Overview](images\asstb.png)
+    ![Asset Table Overview](images/asstb.png)
 
 #### Policy Table:
 Manages policies and their lifecycle including versions, approval statuses, and updates.
 
 - **Attributes**: Policy_ID, Policy_Name, Description, Version, Created_Date, Owner_ID, Approval_Status, Current approval status, Last_Updated
 
-    ![Policy Table Overview](images\poltb.png)
+    ![Policy Table Overview](images/poltb.png)
 
 #### Risk Table:
 Evaluates risks using attributes like likelihood, and impact as well as links them to assets and mitigation controls.
 
 - **Attributes**: Risk_ID, Risk_Category_ID, Risk_Description, Likelihood, Impact, Risk_Score, Risk_Level, Linked_Asset_ID, Mitigation_Control_ID, Risk_Status_ID, Impact_Details
 
-    ![Risk Table Overview](images\ristb.png)
+    ![Risk Table Overview](images/ristb.png)
 
 #### Control Table:
 Defines control measures and evaluates their effectiveness.
 
 - **Attributes**: Control_ID, Control_Name, Control_Description, Control_Type, Control_Effectiveness 
 
-    ![Control Table Overview](images\contb.png)
+    ![Control Table Overview](images/contb.png)
 
 #### Compliance Table:
 Aligns with regulations and monitors compliance scores.
 
 - **Attributes**: Compliance_ID, Regulation_ID, Descriptions, Assessment_Method, Related_Risks_ID, Audit_Reference_ID, Compliance_Score, Compliance_Evaluation, Last_Evaluation
 
-    ![Compliance Table Overview](images\comtb.png)
+    ![Compliance Table Overview](images/comtb.png)
 
 #### Audit Table:
 Tracks audit activities, findings, and corrective actions.
 
 - **Attributes**: Audit_ID, Audit_Date, Audit_Type, Auditor_ID, Audit_Status_ID, Findings, Corrective_Actions
 
-    ![Audit Table Overview](images\audtb.png)
+    ![Audit Table Overview](images/audtb.png)
 
 ### Lookup Tables
 Lookup tables provide streamlined categorization for consistent operations.
@@ -102,7 +102,7 @@ Lookup tables provide streamlined categorization for consistent operations.
 ### GRC Framework Home:
 Provides a centralized hub for managing the framework.
 
-![GRC Framework Home Page Overview](images\home.png)
+![GRC Framework Home Page Overview](images/home.png)
 
 ### Lists:
 Comprehensive lists for all primary tables, including:
@@ -116,17 +116,17 @@ Comprehensive lists for all primary tables, including:
 #### Risk Dashboard:
 Displays risk-related analytics, including scores and levels.
 
-![Risk Dashboard Overview](images\risk.png)
+![Risk Dashboard Overview](images/risk.png)
 
 #### Policy Dashboard:
 Visualizes policy statuses and version histories.
 
-![Policy Dashboard Overview](images\policy.png)
+![Policy Dashboard Overview](images/policy.png)
 
 #### Compliance Dashboard:
 Summarizes compliance scores and evaluation statuses.
 
-![Compliance Dashboard Overview](images\comp.png)
+![Compliance Dashboard Overview](images/comp.png)
 
 ---
 
@@ -134,27 +134,27 @@ Summarizes compliance scores and evaluation statuses.
 1. **Calculate_Risk_Score**:
    - Formula-based computation combining `Likelihood` and `Impact`.
         
-        ![Calculate_Risk_Score](images\riskscore.png)
+        ![Calculate_Risk_Score](images/riskscore.png)
 
 2. **Determine_Risk_Level**:
    - Uses thresholds to assign risk levels based on `Risk_Score`.
 
-        ![Determine_Risk_Level](images\risklevel.png)
+        ![Determine_Risk_Level](images/risklevel.png)
 
 3. **Determine_Compliance_Evaluation**:
    - Converts `Compliance_Score` into qualitative evaluation levels.
 
-        ![Determine_Compliance_Evaluation](images\compeval.png)
+        ![Determine_Compliance_Evaluation](images/compeval.png)
 
 4. **Policy_Status_Notification**:
    - Sends real-time notifications for status changes (e.g., Draft to Published).
 
-        ![Policy_Status_Notification](images\polnoti.png)
+        ![Policy_Status_Notification](images/polnoti.png)
 
 5. **Policy_Version_Control**:
    - Automatically increments the version and updates `Last_Updated` upon changes.
 
-        ![Policy_Version_Control](images\pol_vc.png)
+        ![Policy_Version_Control](images/pol_vc.png)
 
 ---
 
